@@ -7,6 +7,8 @@ package test;
  * 如果index > str.length-1 返回空字符串
  */
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
@@ -31,5 +33,8 @@ public class test4 {
         String substring1 = s1.substring(0, 0);
         System.out.println(substring.length());
         System.out.println(substring1.length());
+
+        Integer[] ints = {1,23,4};
+        System.out.println(JSON.toJSONString(ints));
     }
 }
