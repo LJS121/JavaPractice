@@ -11,7 +11,7 @@ import java.util.List;
  * @author jinsong.Liang
  * @date 2019/3/28 11:05
  */
-public class HarryPotter3 {
+public class HarryPotter {
     int price = 8;//欧元
     public double harryPotter(int[] nums){//传入每本书购买数量的数组
         if(nums.length!=5){

@@ -6,7 +6,7 @@ public class ZeckendorfNumber {
 
     public void zeckendorfNumberSolution(){
         int[] num = {13,8,5,3,2,1};
-        for(int i=0;i<=30;i++){
+        for(int i=0;i<=20;i++){
             int[] flag = {0,0,0,0,0,0};
             int count = i;
             for (int j = 0; j < num.length; j++) {
