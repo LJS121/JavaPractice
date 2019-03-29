@@ -1,5 +1,4 @@
-import ReDo.Anagrams2;
-import com.alibaba.fastjson.JSON;
+import redo.Anagrams2;
 import org.junit.Assert;
 import org.junit.Test;
 
