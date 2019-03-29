@@ -1,7 +1,7 @@
 package first;
 /**
  * 规定初始字符 'A' 给定一个字符 例如 'E'
- *
+ * <p>
  * 打印出类似钻石的要求形状
  */
 
@@ -9,13 +9,13 @@ import org.junit.Test;
 
 public class PrintDiamond {
 
-    public void printDiamondSolution(char c){
-        int len = c-'A';
-        for(int i=0;i<len+1;i++){
+    public void printDiamondSolution(char c) {
+        int len = c - 'A';
+        for (int i = 0; i < len + 1; i++) {
             eachFloor(len, i);
             System.out.println();
         }
-        for(int i=len-1;i>=0;i--){
+        for (int i = len - 1; i >= 0; i--) {
             eachFloor(len, i);
             System.out.println();
         }
@@ -33,7 +33,7 @@ public class PrintDiamond {
     }
 
     @Test
-    public void printDiamondSolutionTest(){
+    public void printDiamondSolutionTest() {
         printDiamondSolution('E');
     }
 }

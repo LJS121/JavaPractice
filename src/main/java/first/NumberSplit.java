@@ -11,6 +11,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NumberSplit {
+    @Test
+    public void fun1() {
+        new fun("14514514514").print();
+        new fun("11").print();
+    }
+
     public class fun {
         Integer total;
         String str;
@@ -34,27 +40,27 @@ public class NumberSplit {
             }
         }
 
-        public boolean excute(){
+        public boolean excute() {
             boolean flag = false;
-            total = arr[arr.length-1]/4;
-            for(int index=0;index<arr.length;index++){
-                if(index==0){
+            total = arr[arr.length - 1] / 4;
+            for (int index = 0; index < arr.length; index++) {
+                if (index == 0) {
                     continue;
                 }
-                if(arr[index]>total){
+                if (arr[index] > total) {
                     break;
                 }
                 int _total = arr[index];
                 //找第二个元素
-                int _secondSum = arr[index+1]+_total;
-                if(map.get(_secondSum)!=null){
-                    int _secondIndex = map.get(_secondSum)+1;
-                    int _threeSum = arr[_secondIndex]+_total;
+                int _secondSum = arr[index + 1] + _total;
+                if (map.get(_secondSum) != null) {
+                    int _secondIndex = map.get(_secondSum) + 1;
+                    int _threeSum = arr[_secondIndex] + _total;
                     //找到第三个元素
-                    if(map.get(_threeSum)!=null){
-                        int _threeIndex = map.get(_threeSum)+1;
-                        if(arr[_threeIndex]+_total==arr[arr.length-1]){
-                            splitIndex[0] = index+1;
+                    if (map.get(_threeSum) != null) {
+                        int _threeIndex = map.get(_threeSum) + 1;
+                        if (arr[_threeIndex] + _total == arr[arr.length - 1]) {
+                            splitIndex[0] = index + 1;
                             splitIndex[1] = _secondIndex;
                             splitIndex[2] = _threeIndex;
                             total = _total;
@@ -66,24 +72,16 @@ public class NumberSplit {
 
             return flag;
         }
-        public void print(){
-            if(!checkInt){
+
+        public void print() {
+            if (!checkInt) {
                 System.out.println("输入含有不合法的非数字字符");
             }
-            if(!excute()){
+            if (!excute()) {
                 System.out.println("不存在这样的分隔符");
-            }else{
+            } else {
                 System.out.println("存在~");
             }
         }
-    }
-
-
-
-
-    @Test
-    public void fun1(){
-        new fun("14514514514").print();
-        new fun("11").print();
     }
 }

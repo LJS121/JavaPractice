@@ -37,7 +37,7 @@ public class BowlingGame {
                         flag[i] = 1;
                         j += 2;
                         temp.add(map.get(c));
-                        temp.add(10-map.get(c));
+                        temp.add(10 - map.get(c));
                     }
                 } else if (c == '-') {
                     char next = strings.charAt(j + 1);
@@ -68,7 +68,7 @@ public class BowlingGame {
             if (strings.charAt(j + 1) == 'X') {
                 temp.add(10);
             } else {
-                temp.add(map.get(strings.charAt(j+1)));
+                temp.add(map.get(strings.charAt(j + 1)));
             }
             j++;
         }

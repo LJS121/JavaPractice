@@ -8,11 +8,11 @@ public class Anagram {
     public static ArrayList<String> permutation(String str) {
         ArrayList<String> list = new ArrayList<>();
         char[] chars = str.toCharArray();
-        permutation(chars,list,0);
+        permutation(chars, list, 0);
         return list;
     }
 
-    public static void permutation(char[] chars, ArrayList<String> list,int i) {
+    public static void permutation(char[] chars, ArrayList<String> list, int i) {
         if (i >= chars.length) {
             return;
         }
@@ -22,7 +22,7 @@ public class Anagram {
             for (int j = i; j < chars.length; j++) {
                 swap(chars, i, j);
 
-                permutation(chars,list, i + 1);
+                permutation(chars, list, i + 1);
 
                 swap(chars, i, j);
             }

@@ -1,13 +1,15 @@
 package first;
 
 import java.util.HashMap;
+
 public class RomanToInteger {
     public static void main(String[] args) {
         int num = romanToInt("MDCCCLXXXVIII");
         System.out.println(num);
     }
+
     public static int romanToInt(String s) {
-        if (s == null || s.length() == 0)    return -1;
+        if (s == null || s.length() == 0) return -1;
 
         HashMap<Character, Integer> map = new HashMap<Character, Integer>();
         map.put('I', 1);
