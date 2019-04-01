@@ -9,7 +9,7 @@ import org.junit.Test;
 public class ZigZagConversion {
     public String convert(String s, int numRows) {
         String result = "";
-        if(numRows==1){
+        if (numRows == 1) {
             return s;
         }
         for (int k = 0; k < numRows; k++) {

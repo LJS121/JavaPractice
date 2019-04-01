@@ -16,14 +16,15 @@ public class ReverseInteger {
             temp /= 10;
         }
         result += temp;
-        if(result>Integer.MAX_VALUE||result<=Integer.MIN_VALUE){
+        if (result > Integer.MAX_VALUE || result <= Integer.MIN_VALUE) {
             return 0;
-        }else{
-            return x>0?(int)result:(int)-result;
+        } else {
+            return x > 0 ? (int) result : (int) -result;
         }
     }
+
     @Test
-    public void test(){
+    public void test() {
         System.out.println(reverse(1534236469));
         System.out.println(reverse(-123));
         System.out.println(Integer.MAX_VALUE);

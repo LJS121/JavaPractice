@@ -3,7 +3,7 @@ package leetcode;
  * 返回List<List<Intege>>> 给定一个int数组 求出所有三位加一起等于 0 等组合 == 三位加一起等于 target其中 target==0
  * 相比ThreeSum3 慢很多 三层for循环
  * 其中ThreeSum3 一层for加类似快排的思想 两边往中间取
- *
+ * <p>
  * 运行超时  花费 16s
  */
 
@@ -13,10 +13,10 @@ public class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         Set<String> set = new HashSet<>();
-        for (int i = 0; i < nums.length-2; i++) {
-            for (int j = i+1; j < nums.length-1; j++) {
-                for (int k = j+1; k < nums.length; k++) {
-                    if(nums[i]+nums[j]+nums[k]==0){
+        for (int i = 0; i < nums.length - 2; i++) {
+            for (int j = i + 1; j < nums.length - 1; j++) {
+                for (int k = j + 1; k < nums.length; k++) {
+                    if (nums[i] + nums[j] + nums[k] == 0) {
                         List<Integer> temp1 = new ArrayList<>();
                         List<Integer> temp2 = new ArrayList<>();
                         temp1.add(nums[i]);
@@ -24,7 +24,7 @@ public class ThreeSum {
                         temp1.add(nums[k]);
                         Collections.sort(temp1);
                         temp2.addAll(temp1);
-                        if(set.add(temp2.toString())){
+                        if (set.add(temp2.toString())) {
                             list.add(temp1);
                         }
                     }

@@ -17,15 +17,15 @@ public class ReverseInteger3 {
             list.add(s.charAt(index++));
         }
         Collections.reverse(list);
-        String ss = new String();
+        String ss = "";
         for (char c : list) {
             ss += c;
         }
         long aLong = Long.valueOf(ss);
-        if(aLong>Integer.MAX_VALUE||aLong<= Integer.MIN_VALUE){
+        if (aLong > Integer.MAX_VALUE || aLong <= Integer.MIN_VALUE) {
             return 0;
-        }else{
-            return x>0?(int)aLong:(int)-aLong;
+        } else {
+            return x > 0 ? (int) aLong : (int) -aLong;
         }
     }
 
