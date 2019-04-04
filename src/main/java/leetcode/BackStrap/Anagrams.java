@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.BackStrap;
 
 import org.junit.Assert;
 import org.junit.Test;

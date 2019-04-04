@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.BackStrap;
 /**
  * StringBuilder.setCharAt()可以设置在某个某位置的值
  */
@@ -27,7 +27,6 @@ public class NQueen {
             for (int i = 0; i < queen.length; i++) {
                 StringBuilder sb = new StringBuilder();
                 for (int j = 0; j < queen.length; j++) {
-                    sb.append('.');
                 }
                 sb.setCharAt(queen[i],'Q');
                 temp.add(sb.toString());

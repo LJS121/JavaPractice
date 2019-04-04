@@ -11,8 +11,16 @@ public class test14 {
         System.out.println(chars[0]);
         String s1 = "abc" + "de";
         String s2 = "abcd" + "e";
-        System.out.println(s1==s2);
+        ma(s1, s2);
+        ma(s1, s2);
+        ma(s1, s2);
+        ma(s1, s2);
+        ma(s1, s2);
+        ma(s1, s2);
     }
 
+    private static void ma(String s1, String s2) {
+        System.out.println(s1 == s2);
+    }
 
 }
