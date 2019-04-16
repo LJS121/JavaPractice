@@ -1,12 +1,13 @@
 package test;
 
-import com.sun.deploy.util.ArrayUtil;
 import org.apache.commons.lang.ArrayUtils;
+
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * asList 只认基本数据类型 数组会被当成对象类型  需要使用ArraysUtils的toObject转换一下 返回成Integer[]
  */
-import java.util.Arrays;
-import java.util.List;
 
 public class test {
     public static void main(String[] args) {

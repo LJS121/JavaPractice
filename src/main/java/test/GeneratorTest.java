@@ -1,8 +1,5 @@
 package test;
 
-import javax.annotation.Generated;
-import java.util.Random;
-
 /**
  * @author jinsong.Liang
  * @Description
